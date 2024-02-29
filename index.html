@@ -45,8 +45,8 @@
 
         
         <hr />
-        <button>Test</button>
-
+        <button onclick="console.log('Button Clicked')">Test</button>
+        <button onclick="count()">Test Function</button>
         <hr />
         <input type="button" value="Button from Input">
         <hr />
@@ -109,14 +109,19 @@
           </p>
     </main>
 
-    <footer>
-        Copyrigth &copy; 2024
-    </footer>
+    <footer>Copyrigth &copy; 2024 </footer>
 
+    <script>
+        console.log("Salut din consola!");
+    </script>
 
     <!-- adaugare fisiere externe de JS-->
     <script src="script.js"></script>
 
+    <!-- adaugare fisiere externe de JS prin module type-->
+    <script type="module" src="./script-module-way.js"></script>
+
+    
 </body>
 
 </html>
