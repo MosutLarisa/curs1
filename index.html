@@ -43,7 +43,7 @@
         culpa numquam recusandae consequatur corporis assumenda necessitatibus dolore excepturi similique voluptatem.
         Obcaecati voluptatibus quae aliquid.
 
-        
+
         <hr />
         <button onclick="console.log('Button Clicked')">Test</button>
         <button onclick="count()">Test Function</button>
@@ -57,16 +57,16 @@
         <input type="file" name="fisier">
         <hr />
         <label for="select">Selecteaza 1</label>
-        <input type="checkbox" name="select1" >        
+        <input type="checkbox" name="select1">
         <label for="select">Selecteaza 2</label>
-        <input type="checkbox" name="select2" >
+        <input type="checkbox" name="select2">
         <hr />
         <label for="radio1">Radio 1</label>
         <input type="radio" name="selectone" value="radio1">
         <label for="radio2">Radio 2</label>
         <input type="radio" name="selectone" value="radio2">
         <hr />
-        <input type="password" >
+        <input type="password">
         <hr />
         <ul>
             <li>Vlad</li>
@@ -83,36 +83,59 @@
         <ul>
             <li>Milk</li>
             <li>
-              Cheese
-              <ul>
-                <li>Blue cheese</li>
-                <li>Feta</li>
-              </ul>
+                Cheese
+                <ul>
+                    <li>Blue cheese</li>
+                    <li>Feta</li>
+                </ul>
             </li>
-          </ul>
-          <hr />
-          <img src="restaurant.png" alt="Restaurant" width="500">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg" alt="Bird" width="500">
-          <hr />
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis aperiam laboriosam voluptatum cupiditate magnam architecto doloribus et. Debitis temporibus cum minima autem ab a nam, repellendus voluptates? Ut, odit!
-          </div>          
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis aperiam laboriosam voluptatum cupiditate magnam architecto doloribus et. Debitis temporibus cum minima autem ab a nam, repellendus voluptates? Ut, odit!
-          </div>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis tempora sunt sint distinctio, libero porro repellat itaque a officia excepturi doloribus aliquam voluptas veniam consequatur quod neque magni necessitatibus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis nobis nemo vero amet quidem, ea, provident tenetur sint earum illum quae doloremque voluptas libero, adipisci maxime voluptatum laborum eligendi.
-          </p>
+        </ul>
+        <hr />
+        <img src="restaurant.png" alt="Restaurant" width="500">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg"
+            alt="Bird" width="500">
+        <hr />
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis aperiam laboriosam voluptatum
+            cupiditate magnam architecto doloribus et. Debitis temporibus cum minima autem ab a nam, repellendus
+            voluptates? Ut, odit!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officiis aperiam laboriosam voluptatum
+            cupiditate magnam architecto doloribus et. Debitis temporibus cum minima autem ab a nam, repellendus
+            voluptates? Ut, odit!
+        </div>
+        <hr />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis tempora sunt sint distinctio,
+            libero porro repellat itaque a officia excepturi doloribus aliquam voluptas veniam consequatur quod neque
+            magni necessitatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis nobis nemo vero amet quidem, ea,
+            provident tenetur sint earum illum quae doloremque voluptas libero, adipisci maxime voluptatum laborum
+            eligendi.
+        </p>
+        <hr />
+        <canvas width="120" height="120"></canvas>
     </main>
 
     <footer>Copyrigth &copy; 2024 </footer>
 
     <script>
         console.log("Salut din consola!");
+        let counter = 0;
+        function count() {
+            counter++;
+            console.log("Salut din functie!", counter);
+        }
+
+        const canvas = decument.getElementById("draw1");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(10, 10, 150, 100)
+
     </script>
 
     <!-- adaugare fisiere externe de JS-->
@@ -121,7 +144,9 @@
     <!-- adaugare fisiere externe de JS prin module type-->
     <script type="module" src="./script-module-way.js"></script>
 
-    
+    <sccript></sccript>
+
+
 </body>
 
 </html>
