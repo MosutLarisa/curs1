@@ -27,7 +27,7 @@
                 <li><a href="http://emanuel.ro" target="_blank">SiteUEO</a></li>
             </ul>
         </nav>
-        <h1>Titlu 1</h1>
+        <h1 class="title">Titlu 1</h1>
         <h2>Titlu 2</h2>
         <h3>Titlu 3</h3>
         <h4>Titlu 4</h4>
@@ -117,25 +117,24 @@
             eligendi.
         </p>
         <hr />
-        <canvas width="120" height="120"></canvas>
+        <canvas id="draw1"></canvas>
     </main>
 
     <footer>Copyrigth &copy; 2024 </footer>
-
     <script>
         console.log("Salut din consola!");
+
         let counter = 0;
         function count() {
             counter++;
             console.log("Salut din functie!", counter);
         }
 
-        const canvas = decument.getElementById("draw1");
+        const canvas = document.getElementById("draw1");
         const ctx = canvas.getContext("2d");
 
         ctx.fillStyle = "red";
-        ctx.fillRect(10, 10, 150, 100)
-
+        ctx.fillRect(10, 10, 150, 100);
     </script>
 
     <!-- adaugare fisiere externe de JS-->
